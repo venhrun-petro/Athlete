@@ -46,12 +46,11 @@
 			var ms=document.createElement("link");ms.rel="stylesheet";
 			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
 		}
-		loadCSS("http://allfont.ru/allfont.css?fonts=muli-light"); //Load Libs CSS: Animate CSS
-		loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
-		loadCSS("_main.css");
+		loadCSS("<link href=\"https://fonts.googleapis.com/css?family=Muli:900,900i,800,800i,700,700i,600,600i,500,500i,400,400i,300,300i\" rel=\"stylesheet\">"); //Load Libs CSS: Animate CSS
+
 		loadCSS("slick/slick.css");
 		loadCSS("slick/slick-theme.css");                //User Styles: Main
-		loadCSS("_media.css");               //User Styles: Media
+		               //User Styles: Media
 	</script>
 
 	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
@@ -62,7 +61,6 @@
 	<!-- Load Scripts -->
 	<script>var scr = {"scripts":[
 		{"src" : "libs/modernizr/modernizr.js", "async" : false},
-            {"src" : "libs/waypoints/waypoints.min.js", "async" : false},
             {"src" : "libs/jquery/jquery-3.3.1.min.js", "async" : false},
             {"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
         {"src" : "slick/slick.min.js", "async" : false},
